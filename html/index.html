@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафедраи иқтисоди рақамӣ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #11258b;
+            color: rgb(237, 236, 240);
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #174391;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            padding: 20px;
+        }
+        aside {
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+        aside ul li {
+            margin-bottom: 10px;
+        }
+        aside ul li a {
+            text-decoration: none;
+            color: #003366;
+        }
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+        section {
+            flex: 1;
+            padding: 20px;
+        }
+        section h2 {
+            color: #074583;
+        }
+        .profile {
+            display: flex;
+            margin-top: 20px;
+        }
+        .profile img {
+            width: 150px;
+            height: 180px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-details {
+            max-width: 900px;
+        }
+        footer {
+            background-color: #0653a1;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шапка сайта</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #1E2B3A;
+            color: white;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 20px;
+            font-size: 14px;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 2px solid transparent;
+            border-radius: 0; /* Квадратные кнопки */
+            transition: 0.3s ease-in-out;
+        }
+        .top-bar a:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .main-header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #F7F8FA;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1E2B3A;
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #1E2B3A;
+            color: white;
+            padding: 10px 0;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            border-radius: 0; /* Квадратные кнопки */
+            transition: 0.3s ease-in-out;
+        }
+        .nav-bar a:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Шапка сайта</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .fixed-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 120px; /* Фиксированная высота */
+            background-color: #00224F;
+            color: #fff;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+            .header {
+                background-color: #00224F;
+                color: white;
+            }
+            .top-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 20px;
+                font-size: 14px;
+            }
+            .top-bar a {
+                color: white;
+                text-decoration: none;
+                padding: 6px 10px;
+                border: 2px solid transparent;
+                border-radius: 4px; /* Немного скругленные углы */
+                margin-right: 8px; /* Уменьшенный отступ между кнопками */
+                transition: all 0.3s ease;
+            }
+            .top-bar a:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+            }
+            .main-header {
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+                background-color: #F7F8FA;
+            }
+            .logo {
+                display: flex;
+                align-items: center;
+            }
+            .logo img {
+                height: 100px;
+                margin-right: 10px;
+            }
+            .title {
+                font-size: 18px;
+                font-weight: bold;
+                color: #00224F;
+            }
+            .nav-bar {
+                display: flex;
+                justify-content: center;
+                background-color: #00224F;
+                color: white;
+                padding: 10px 0;
+            }
+            .nav-bar a {
+                color: white;
+                text-decoration: none;
+                padding: 8px 15px;
+                margin: 0 5px; /* Уменьшенный отступ между кнопками */
+                border: 2px solid transparent;
+                border-radius: 4px; /* Лёгкое скругление */
+                transition: all 0.3s ease;
+            }
+            .nav-bar a:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+            }
+        </style>
+    </head>
+    <body>
+
+    <div class="header">
+        <!-- Верхняя панель -->
+        <div class="top-bar">
+            <div>
+                <a href="https://www.instagram.com/polytech_tj/">Instagram</a>
+                <a href="https://t.me/polytechtj">Telegram</a>
+                <a href="https://www.facebook.com/KPITTU/">facebook</a>
+            </div>
+        </div>
+    
+        <!-- Основной блок -->
+        <div class="main-header">
+            <div class="logo">
+                <img src="C:\Users\User\Desktop\проект асоси\расм\новый год логатип.jpg" alt="Логотип">
+                <div class="title">ДОНИШКАДАИ ПОЛИТЕХНИКИИ ДОНИШГОҲИ ТЕХНИКИИ ТОҶИКИСТОН<br>ба номи академик М.С.Осимӣ дар шаҳри Хуҷанд</div>
+                <img src="C:\Users\User\Desktop\проект асоси\расм\елка.gif" alt="Логотип">
+            </div>
+            <div style="margin-left: auto;">
+                <a href="https://polytech.tj/" style="color: #1E2B3A; text-decoration: none;">
+                    Маълумоти бештар оиди донишкада
+                </a>
+            </div>
+        </div>
+    
+        <!-- Нижняя панель навигации -->
+        <div class="nav-bar">
+            <a href="#">Оиди кафедра</a>
+            <a href="#омузгорон">Омӯзгорон</a>
+            <a href="#ахборот">Ахборот</a>
+            <a href="#алока">Алоқа</a>
+        </div>
+    </div>
+    
+    </body>
+    </html>
+    
+</body>
+</html>
+
+    <div style="display: flex; flex-direction: row; gap: 20px;">
+        <div style="flex: 1;">
+            <h2></h2>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <a href="#оидикафедра" style="display: inline-block; padding: 10px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 0; text-align: left;"
+                  onmouseover="this.style.backgroundColor='#0056b3'" 
+                  onmouseout="this.style.backgroundColor='#007BFF'" 
+                 onmousedown="this.style.backgroundColor='#003f7f'" 
+                  onmouseup="this.style.backgroundColor='#0056b3'">
+                 Оиди кафедра
+                   </a>
+                <a href="#омузгорон" style="display: inline-block; padding: 10px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 0; text-align: left;"
+                  onmouseover="this.style.backgroundColor='#0056b3'" 
+                  onmouseout="this.style.backgroundColor='#007BFF'" 
+                 onmousedown="this.style.backgroundColor='#003f7f'" 
+                  onmouseup="this.style.backgroundColor='#0056b3'">
+                  Омӯзгорони кафедра
+                   </a>
+                <a href="#тачриба" style="display: inline-block; padding: 10px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 0; text-align: left;"
+                  onmouseover="this.style.backgroundColor='#0056b3'" 
+                  onmouseout="this.style.backgroundColor='#007BFF'" 
+                 onmousedown="this.style.backgroundColor='#003f7f'" 
+                  onmouseup="this.style.backgroundColor='#0056b3'">
+                 Таҷрибаомӯзӣ
+                   </a>
+                   <a href="#хос" style="display: inline-block; padding: 10px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 0; text-align: left;"
+                   onmouseover="this.style.backgroundColor='#0056b3'" 
+                   onmouseout="this.style.backgroundColor='#007BFF'" 
+                  onmousedown="this.style.backgroundColor='#003f7f'" 
+                   onmouseup="this.style.backgroundColor='#0056b3'">
+                  Барои чӣ кафедраи мо?
+                    </a>
+                <a href="#ахборот" style="display: inline-block; padding: 10px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 0; text-align: left;"
+                onmouseover="this.style.backgroundColor='#0056b3'" 
+                onmouseout="this.style.backgroundColor='#007BFF'" 
+               onmousedown="this.style.backgroundColor='#003f7f'" 
+                onmouseup="this.style.backgroundColor='#0056b3'">
+               Ахборот
+                 </a>
+                 <a href="#галерея" style="display: inline-block; padding: 10px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 0; text-align: left;"
+                onmouseover="this.style.backgroundColor='#0056b3'" 
+                onmouseout="this.style.backgroundColor='#007BFF'" 
+               onmousedown="this.style.backgroundColor='#003f7f'" 
+                onmouseup="this.style.backgroundColor='#0056b3'">
+               Галерея
+                 </a>
+                 <a href="#алока" style="display: inline-block; padding: 10px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 0; text-align: left;"
+                onmouseover="this.style.backgroundColor='#0056b3'" 
+                onmouseout="this.style.backgroundColor='#007BFF'" 
+               onmousedown="this.style.backgroundColor='#003f7f'" 
+                onmouseup="this.style.backgroundColor='#0056b3'">
+               Алоқа бо кафедра
+                 </a>
+            </div>
+        </div>
+        <div style="flex: 2;">
+            <h1 >Кафедраи иқтисодиёти рақамӣ </h1>            
+                Кафедраи Иқтисоди рақамӣ соли 2020 дар ҳайати факултети муҳандисӣ-иқтисодӣ таъсис ёфтааст. 
+				Кафедра аз соли таъсисёбӣ 3 ихтисоси зинаи бакалавр (1-26 03 01 – Идораи захираҳои иттилоотӣ,
+				1-40 01 02-02 – Технология ва низоми иттилоотӣ (дар иқтисодиёт), 1-40 03 01 – Зеҳни сунъӣ), 
+				2 ихтисоси зинаи магистратура (1-400102-Низомҳои иттилоотӣ ва технологияҳо (аз рӯи самтҳо), 
+				1-40 03 01 – Зеҳни сунъӣ)  ва 2 ихтисоси зинаи докторантура (6D-070300 - Системаҳои иттилоотӣ, 
+				6D-070400 - Техникаи ҳисоббарор ва таъминоти барномавӣ)-ро доро аст. Аксарияти устодони кафедра 
+				хатмкунандагони донишкадаи мазкур ба шумор рафта дар кафедраи Барномарезӣ ва низомҳои иттилоотӣ 
+				донишу малака гирифтанд.  
+            <p>
+                Кафедра профессорҳо ва омӯзгоронро дар соҳаи иқтисоди рақамӣ, соҳавӣ ва корпоративӣ, баҳисобгирӣ,
+                молия, психологияи амалӣ ва информатикаи тиҷоратӣ муттаҳид мекунад.
+                Мақсади кафедра ин тайёр кардани кадрхои баландихтисос дар сохаи низомҳо ва зихираҳои иттилоотӣ, 
+                тахлили система, зеҳни сунъӣ, идоракунии инноватсионй дар фаъолияти иктисодии дохилӣ ва берунӣ, 
+                иштироки фаъолона дар ташаккули сиёсати илмию техникӣ ва истехсолии кишвар.
+            </p>
+        </div>
+        <div style="flex: 1; text-align: center;">
+            <h3>Мудири кафедра</h3>
+            <img src="C:\Users\User\Desktop\проект асоси\расм\Усмонова.jpg" alt="Фото заведующего" style="border-radius: 100%; width: 150px; height: 170px;">
+            <p><strong>Усмонова Маҳинахон Рустамовна</strong></p>
+            <p>Омӯзгори калон<br>Номзади илмҳои педогогӣ</p>
+            <p>Суроға:<br>ш.Хуҷанд, 30 мкр,бинои И, ауд.202</p>
+            <p>Телефон барои тамос: +992 928390080 </p>
+        </div>
+    </div>
+    
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        footer {
+            background-color: #00224F;
+            color: #FFFFFF;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        footer div {
+            margin-bottom: 20px;
+        }
+        footer h3 {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #FFD700;
+        }
+        footer p, footer a {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            padding: 0 20px;
+        }
+        .footer-section:last-child {
+            text-align: right;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #141ab1;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Омӯзгорони мо</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .teachers-section {
+            text-align: center;
+            padding: 10px 20px;
+        }
+        .teachers-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #000;
+        }
+        .teachers-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .teacher-card {
+            width: 200px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .teacher-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .teacher-card img {
+            width: 140px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .teacher-card h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #000;
+        }
+        .teacher-card p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <section id="омузгорон" class="section"></section>
+<section class="teachers-section">
+    <h2>Омӯзгорони кафедра</h2>
+    <div class="teachers-container">
+        <!-- Карточка 1 -->
+        <div class="teacher-card">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\Усмонова.jpg" alt="Усмонова Маҳинахон">
+            <h3>Усмонова Маҳинахон Рустамовна  </h3>
+            <p>Номзади илмҳои педагогӣ 
+             омӯзгори калон 
+            </p>
+        </div>
+        <!-- Карточка 2 -->
+        <div class="teacher-card">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\низоматдинов.jpg" alt="Низомитдинов Аҳлитдин">
+            <h3>Низомитдинов Аҳлитдин  
+                Илёситдинович  
+                </h3>
+            <p>Доктори фалсафа 
+                омӯзгори калон 
+            </p>
+        </div>
+        <!-- Карточка 3 -->
+        <div class="teacher-card">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\нумонова.jpg" alt="Нумонова Нигорахон">
+            <h3>Нумонова Нигорахон Рустмовна</h3>
+            <p>Ассистент</p>
+        </div>
+        <!-- Карточка 4 -->
+        <div class="teacher-card">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\усмонов.jpg" alt="Усмонов Азамҷон">
+            <h3>Усмонов Азамҷон Акрамҷонович</h3>
+            <p>Ассистент</p>
+        </div>
+        <!-- Карточка 5 -->
+        <div class="teacher-card">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\олимов.jpg" alt="Олимов Насимҷон">
+            <h3>Олимов Насимҷон</h3>
+            <p>Лаборанти калон</p>
+        </div>
+        <!-- Карточка 6 -->
+        <div class="teacher-card">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\мирзозода.jpg" alt="Мирзозода Фарзонахон">
+            <h3>Мирзозода Фарзонахон</h3>
+            <p>Омӯзгори калон </p>
+        </div>
+        <div class="teacher-card">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\иконка.jpg" alt="Иномов">
+            <h3>Иномов Беҳрӯз Бурҳонович</h3>
+            <p>омӯзгори калон
+                </p>
+        </div>
+        <!-- Карточка 7 -->
+        <div class="teacher-card">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\иконка.jpg" alt="Довудов Г.">
+            <h3>Довудов Г.</h3>
+            <p>Номзади илмҳои техникӣ 
+                Омӯзгори калон 
+            </p>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Секция для сайта</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .section {
+            background-color: #00224F;
+            color: #fff;
+            text-align: center;
+            padding: 5px 20px;
+        }
+
+        .section h1 {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            color: #00224F;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px #00224F;
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <section id="хос"></section>
+    <div class="хос">
+<div class="section">
+    <h1>Хатмкунандаи муваффақи кафедраи мо соҳиби чунин донишҳо мегардад:</h1>
+    <div class="cards">
+        <div class="card">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\экономика.svg" alt="Chart Icon">
+            <p>Принсипҳои таҳия, рушд, пешбурди маҳсулоти технологӣ</p>
+        </div>
+        <div class="card">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\методология.svg" alt="Database Icon">
+            <p>Методҳои асосӣ дар соҳаи истифодаи пойгоҳи додаҳо</p>
+        </div>
+        <div class="card">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\основы цэ.svg" alt="Briefcase Icon">
+            <p>Асосҳои иқтисоди рақамӣ ва тамоюлҳои асосии рушди он</p>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Партнеры</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .partners-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .partners-section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #000;
+        }
+
+        .partners-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .partners-logos img {
+            height: 80px; /* Универсальный размер логотипов */
+            max-width: 150px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <!-- Раздел партнеров -->
+    <section id="тачриба"></section>
+    <section class="partners-section">
+        <h2>Таҷрибаомӯзии донишӯёни кафедра :</h2>
+        <div class="partners-logos">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\тисел.png" alt="Партнер 1">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\эсхата.jfif" alt="Партнер 2">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\мра.png" alt="Партнер 3">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\фаровон.png" alt="Партнер 4">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\имон.png" alt="Партнер 5">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\алиф.jfif" alt="Партнер 6">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\дс.jfif" alt="Партнер 7">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\азизи молия.jfif" alt="Партнер 8">
+        </div>
+    </section>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .news-section {
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .news-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-date {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
+        .news-title {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0 5px;
+        }
+
+        .news-description {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+        }
+    </style>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .news-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .news-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .news-item:hover {
+            transform: translateY(-5px);
+        }
+        .news-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .news-content {
+            padding: 15px;
+        }
+        .news-content h2 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .news-content p {
+            margin: 0 0 10px;
+            color: #555;
+        }
+        .news-content a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .news-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <section id="ахборот"></section>
+    <div class="news-container">
+        <h1>ХАБАРҲОИ КАФЕДРА</h1>
+        <div class="news-grid">
+            <div class="news-item">
+                <img src="C:\Users\User\Desktop\проект асоси\расм\новости001.jpg" class="news-image">
+                <div class="news-content">
+                    <h2>DEVCON 2024: КОНФЕРЕНСИЯИ БАРНОМАСОЗОН ВА МУТАХАССИСОНИ СОҲАИ ТЕХНОЛОГИЯҲОИ ИТТИЛООТӢ  </h2>
+                    <p>12.12.2024</p>
+                    <a href="https://t.me/polytechtj/1009">Мухтасар</a>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="C:\Users\User\Desktop\проект асоси\расм\новости2.jpg" class="news-image">
+                <div class="news-content">
+                    <h2>ИШТИРОК ДАР САММИТИ ЯКУМИ ХАТМКАРДАГОНИ TECHWOMEN ДАР КАСАБЛАНКА</h2>
+                    <p>18.12.2024</p>
+                    <p>Аввалин Саммити хатмкардагони барномаи TechWomen аз 4 то 6 декабри соли 2024 дар шаҳри Касабланкаи Марокаш баргузор шуд.</p>
+                    <a href="https://t.me/polytechtj/1040">Мухтасар</a>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="C:\Users\User\Desktop\проект асоси\расм\новости3.jpg" class="news-image">
+                <div class="news-content">
+                    <h2>Иштироки фаъолонаи устодону донишҷӯён дар чорабинии идонаи Иди Парчами миллӣ дар шаҳри Хуҷанд.</h2>
+                    <p>24.11.2024</p>
+                    <p> Беш аз 1700 нафар устодону донишҷӯёни Донишкадаи политехникии Донишгоҳи техникии 
+                        Тоҷикистон ба номи академик Муҳаммад осимӣ дар шаҳри Хуҷанд  дар чорабинии 
+                        ба муносибати Рӯзи Парчами давлатии Ҷумҳурии Тоҷикистон, ки дар майдони Парчами 
+                        миллӣ даршаҳри Хуҷанд ботантана баргуор гардид, фаъолона ширкат намуданд.</p>
+                    <a href="https://t.me/polytechtj/957">Мухтасар</a>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="C:\Users\User\Desktop\проект асоси\расм\новости4.jpg" class="news-image">
+                <div class="news-content">
+                    <h2>ТРЕНИНГ: “АЗ ҒОЯ ТО ТИҶОРАТИКУНОНӢ” </h2>
+                    <p>11.11.2024</p>
+                    <p>Бо мақсади баланд бардоштани сифати машғулиятҳо дар Донишкадаи  политехникӣ Донишгоҳи техникии Тоҷикистон ба номи академик 
+                        Муҳаммад Осимӣ дар шаҳри Хуҷанд, ҷалби мутахассисони соҳа дар раванди таълим дар доираи дарсҳои истеҳсолӣ ба роҳ монда шудааст.</p>
+                    <a href="https://t.me/polytechtj/933">Мухтасар</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Slider Section</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .slider-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .slider-header {
+            text-align: center;
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            font-size: 24px;
+        }
+
+        .slider-main {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .slider-main img {
+            max-height: 120%;
+            max-width: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .slider-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .slider-controls button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .slider-controls button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .thumbnails img {
+            height: 60px;
+            margin: 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border 0.3s;
+        }
+
+        .thumbnails img:hover, .thumbnails img.active {
+            border: 2px solid #003366;
+        }
+    </style>
+</head>
+<body>
+    <section id="галерея"></section>
+    <div class="slider-container">
+        <div class="slider-header">ГАЛЕРЕЯИ КАФЕДРА</div>
+        <div class="slider-main">
+            <button class="prev">&#10094;</button>
+            <img id="main-image" src="C:\Users\User\Desktop\проект асоси\расм\расм2.jpg" alt="Main Slide">
+            <button class="next">&#10095;</button>
+        </div>
+        <div class="thumbnails">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\расм1.jpg" alt="Thumbnail 1" class="active">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\расм4.jpg" alt="Thumbnail 2">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\расм6.jpg" alt="Thumbnail 3">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\расм5.jpg" alt="Thumbnail 4">
+            <img src="C:\Users\User\Desktop\проект асоси\расм\расм3.jpg" alt="Thumbnail 5">
+        </div>
+    </div>
+
+    <script>
+        const mainImage = document.getElementById('main-image');
+        const thumbnails = document.querySelectorAll('.thumbnails img');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+
+        let currentIndex = 0;
+
+        function updateMainImage(index) {
+            mainImage.src = thumbnails[index].src;
+            thumbnails.forEach(img => img.classList.remove('active'));
+            thumbnails[index].classList.add('active');
+        }
+
+        thumbnails.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                currentIndex = index;
+                updateMainImage(index);
+            });
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : thumbnails.length - 1;
+            updateMainImage(currentIndex);
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex < thumbnails.length - 1) ? currentIndex + 1 : 0;
+            updateMainImage(currentIndex);
+        });
+    </script>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        footer {
+            background-color: #003366;
+            color: #FFFFFF;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        footer div {
+            margin-bottom: 20px;
+        }
+        footer h3 {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #cfbe61;
+        }
+        footer p, footer a {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            padding: 0 20px;
+        }
+        .footer-section:last-child {
+            text-align: right;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #b6ab6b;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <section id="алока"></section>
+<footer>
+    <div class="footer-section">
+        <h3>ДПДТТ ба номи академик М.С.Осимӣ дар шаҳри Хуҷанд</h3>
+        <p>Сомонаи расмии кафедраи Иқтисодиёти рақамии донишкада</p>
+        <p>© 2024 </p>
+    </div>
+    <div class="footer-section">
+        <h3>Комиссияи қабул</h3>
+        <p><strong>Суроға:</strong>  Ҷумҳурии Тоҷикистон, 735700,ш.Хуҷанд, кӯчаи Исмоили Сомонӣ, 226 </p>
+        <p><strong>Телефон барои алоқа:</strong> +992 (3422) 6-04-54</p>
+        <p><strong></strong><a href="info@polytech.tj"></a></p>
+
+    </div>
+    <div class="footer-section">
+        <h3>Маъмурият</h3>
+        <p><strong>Суроға:</strong> Ҷумҳурии Тоҷикистон, 735700,ш.Хуҷанд, кӯчаи Исмоили Сомонӣ, 226</p>
+        <p><strong>Телефон барои алоқа:</strong> +992 (3422) 6-04-54</p>
+        <p><strong></strong> <a href="info@polytech.tj"></a></p>
+    </div>
+    </div>
+    
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
+

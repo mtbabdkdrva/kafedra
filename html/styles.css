@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.main-header {
+    background-color: #00274d;
+    color: white;
+    padding: 10px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.top-bar img {
+    height: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.breadcrumb {
+    padding: 20px;
+    background-color: #e9ecef;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #00274d;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e9ecef;
+    color: #00274d;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.tab-button.active {
+    background-color: #00274d;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.tab-content.active {
+    display: block;
+}

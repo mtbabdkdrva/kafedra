@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафедраи иқтисоди рақамӣ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #11258b;
+            color: rgb(237, 236, 240);
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #174391;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            padding: 20px;
+        }
+        aside {
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+        aside ul li {
+            margin-bottom: 10px;
+        }
+        aside ul li a {
+            text-decoration: none;
+            color: #003366;
+        }
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+        section {
+            flex: 1;
+            padding: 20px;
+        }
+        section h2 {
+            color: #074583;
+        }
+        .profile {
+            display: flex;
+            margin-top: 20px;
+        }
+        .profile img {
+            width: 150px;
+            height: 180px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-details {
+            max-width: 900px;
+        }
+        footer {
+            background-color: #0653a1;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шапка сайта</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #1E2B3A;
+            color: white;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 20px;
+            font-size: 14px;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 2px solid transparent;
+            border-radius: 0; /* Квадратные кнопки */
+            transition: 0.3s ease-in-out;
+        }
+        .top-bar a:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .main-header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #F7F8FA;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1E2B3A;
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #1E2B3A;
+            color: white;
+            padding: 10px 0;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            border-radius: 0; /* Квадратные кнопки */
+            transition: 0.3s ease-in-out;
+        }
+        .nav-bar a:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Шапка сайта</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .fixed-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 120px; /* Фиксированная высота */
+            background-color: #1f2d3b;
+            color: #fff;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+            .header {
+                background-color: #1E2B3A;
+                color: white;
+            }
+            .top-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 20px;
+                font-size: 14px;
+            }
+            .top-bar a {
+                color: white;
+                text-decoration: none;
+                padding: 6px 10px;
+                border: 2px solid transparent;
+                border-radius: 4px; /* Немного скругленные углы */
+                margin-right: 8px; /* Уменьшенный отступ между кнопками */
+                transition: all 0.3s ease;
+            }
+            .top-bar a:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+            }
+            .main-header {
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+                background-color: #F7F8FA;
+            }
+            .logo {
+                display: flex;
+                align-items: center;
+            }
+            .logo img {
+                height: 100px;
+                margin-right: 10px;
+            }
+            .title {
+                font-size: 18px;
+                font-weight: bold;
+                color: #1E2B3A;
+            }
+            .nav-bar {
+                display: flex;
+                justify-content: center;
+                background-color: #1E2B3A;
+                color: white;
+                padding: 10px 0;
+            }
+            .nav-bar a {
+                color: white;
+                text-decoration: none;
+                padding: 8px 15px;
+                margin: 0 5px; /* Уменьшенный отступ между кнопками */
+                border: 2px solid transparent;
+                border-radius: 4px; /* Лёгкое скругление */
+                transition: all 0.3s ease;
+            }
+            .nav-bar a:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+            }
+        </style>
+    </head>
+    <body>
+
+    <div class="header">
+        <!-- Верхняя панель -->
+        <div class="top-bar">
+            <div>
+                <a href="https://www.instagram.com/polytech_tj/">Instagram</a>
+                <a href="https://t.me/polytechtj">Telegram</a>
+                <a href="https://www.facebook.com/KPITTU/">facebook</a>
+            </div>
+        </div>
+    
+        <!-- Основной блок -->
+        <div class="main-header">
+            <div class="logo">
+                <img src="логатип.png" alt="Логотип">
+                <div class="title">ДОНИШКАДАИ ПОЛИТЕХНИКИИ ДОНИШГОҲИ ТЕХНИКИИ ТОҶИКИСТОН<br>ба номи академик М.С.Осимӣ дар шаҳри Хуҷанд</div>
+            </div>
+            <div style="margin-left: auto;">
+                <a href="https://polytech.tj/" style="color: #1E2B3A; text-decoration: none;">
+                    Маълумоти бештар оиди донишкада
+                </a>
+            </div>
+        </div>
+    
+        <!-- Нижняя панель навигации -->
+        <div class="nav-bar">
+            <a href="#">Оиди кафедра</a>
+            <a href="#">Барои донишҷӯ</a>
+            <a href="#">Выпускнику</a>
+            <a href="#контакты">Бизнесу</a>
+        </div>
+    </div>
+    
+    </body>
+    </html>
+    
+</body>
+</html>
+
+    <div style="display: flex; flex-direction: row; gap: 20px;">
+        <div style="flex: 1;">
+            <h2></h2>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <button style="padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 0; cursor: pointer; text-align: left;"
+                        onmouseover="this.style.backgroundColor='#0056b3'" 
+                        onmouseout="this.style.backgroundColor='#007BFF'" 
+                        onmousedown="this.style.backgroundColor='#003f7f'" 
+                        onmouseup="this.style.backgroundColor='#0056b3'">
+                    Новости
+                </button>
+                <button style="padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 0; cursor: pointer; text-align: left;"
+                        onmouseover="this.style.backgroundColor='#0056b3'" 
+                        onmouseout="this.style.backgroundColor='#007BFF'" 
+                        onmousedown="this.style.backgroundColor='#003f7f'" 
+                        onmouseup="this.style.backgroundColor='#0056b3'">
+                    Объявления
+                </button>
+                <button style="padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 0; cursor: pointer; text-align: left;"
+                        onmouseover="this.style.backgroundColor='#0056b3'" 
+                        onmouseout="this.style.backgroundColor='#007BFF'" 
+                        onmousedown="this.style.backgroundColor='#003f7f'" 
+                        onmouseup="this.style.backgroundColor='#0056b3'">
+                    Образовательные программы
+                </button>
+                <button style="padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 0; cursor: pointer; text-align: left;"
+                        onmouseover="this.style.backgroundColor='#0056b3'" 
+                        onmouseout="this.style.backgroundColor='#007BFF'" 
+                        onmousedown="this.style.backgroundColor='#003f7f'" 
+                        onmouseup="this.style.backgroundColor='#0056b3'">
+                    Научная деятельность
+                </button>
+                <button style="padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 0; cursor: pointer; text-align: left;"
+                        onmouseover="this.style.backgroundColor='#0056b3'" 
+                        onmouseout="this.style.backgroundColor='#007BFF'" 
+                        onmousedown="this.style.backgroundColor='#003f7f'" 
+                        onmouseup="this.style.backgroundColor='#0056b3'">
+                    Достижения кафедры
+                </button>
+                <button style="padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 0; cursor: pointer; text-align: left;"
+                        onmouseover="this.style.backgroundColor='#0056b3'" 
+                        onmouseout="this.style.backgroundColor='#007BFF'" 
+                        onmousedown="this.style.backgroundColor='#003f7f'" 
+                        onmouseup="this.style.backgroundColor='#0056b3'">
+                    Публикации сотрудников кафедры
+                </button>
+                <button style="padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 0; cursor: pointer; text-align: left;"
+                        onmouseover="this.style.backgroundColor='#0056b3'" 
+                        onmouseout="this.style.backgroundColor='#007BFF'" 
+                        onmousedown="this.style.backgroundColor='#003f7f'" 
+                        onmouseup="this.style.backgroundColor='#0056b3'">
+                    Расписание консультаций
+                </button>
+            </div>
+        </div>
+        <div style="flex: 2;">
+            <h1 >Кафедраи иқтисодиёти рақамӣ </h1>
+            <p>
+                Кафедраи Иқтисоди рақамӣ соли 2020 дар ҳайати факултети муҳандисӣ-иқтисодӣ таъсис ёфтааст. 
+				Кафедра аз соли таъсисёбӣ 3 ихтисоси зинаи бакалавр (1-26 03 01 – Идораи захираҳои иттилоотӣ,
+				1-40 01 02-02 – Технология ва низоми иттилоотӣ (дар иқтисодиёт), 1-40 03 01 – Зеҳни сунъӣ), 
+				2 ихтисоси зинаи магистратура (1-400102-Низомҳои иттилоотӣ ва технологияҳо (аз рӯи самтҳо), 
+				1-40 03 01 – Зеҳни сунъӣ)  ва 2 ихтисоси зинаи докторантура (6D-070300 - Системаҳои иттилоотӣ, 
+				6D-070400 - Техникаи ҳисоббарор ва таъминоти барномавӣ)-ро доро аст. Аксарияти устодони кафедра 
+				хатмкунандагони донишкадаи мазкур ба шумор рафта дар кафедраи Барномарезӣ ва низомҳои иттилоотӣ 
+				донишу малака гирифтанд.  
+            </p>
+            <p>
+                Кафедра профессорҳо ва омӯзгоронро дар соҳаи иқтисоди рақамӣ, 
+                соҳавӣ ва корпоративӣ, баҳисобгирӣ, молия, психологияи амалӣ
+                ва информатикаи тиҷоратӣ муттаҳид мекунад.
+            </p>
+            
+        </div>
+        <div style="flex: 1; text-align: center;">
+            <h3>Мудири кафедра</h3>
+            <img src="Усмонова.jpg" alt="Фото заведующего" style="border-radius: 100%; width: 150px; height: 170px;">
+            <p><strong>Усмонова Маҳинахон Рустамовна</strong></p>
+            <p>Омӯзгори калон<br>Номзади илмҳои педогогӣ</p>
+            <p>Суроға:<br>ш.Хуҷанд, 30 мкр,бинои И, ауд.202</p>
+            <p>Телефон барои тамос: +992 928390080 </p>
+        </div>
+    </div>
+    
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        footer {
+            background-color: #00224F;
+            color: #FFFFFF;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        footer div {
+            margin-bottom: 20px;
+        }
+        footer h3 {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #FFD700;
+        }
+        footer p, footer a {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            padding: 0 20px;
+        }
+        .footer-section:last-child {
+            text-align: right;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #141ab1;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Раздел страницы</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .section-info {
+            background-color: #F8F9FA;
+            padding: 40px;
+            border-top: 4px solid #220583;
+            border-bottom: 4px solid #1f116b;
+        }
+        .section-info h2 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .info-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .info-item {
+            background-color: #FFFFFF;
+            border: 1px solid #DDDDDD;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+        .info-item img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .info-item h3 {
+            font-size: 18px;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+        .info-item p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="section-info">
+    <h2>Информация о кафедре</h2>
+    <div class="info-grid">
+        <div class="info-item">
+            <img src="https://via.placeholder.com/100" alt="Иконка 1">
+            <h3>Образовательные программы</h3>
+            <p>Современные программы обучения для успешной карьеры в бизнесе и науке.</p>
+        </div>
+        <div class="info-item">
+            <img src="https://via.placeholder.com/100" alt="Иконка 2">
+            <h3>Научная деятельность</h3>
+            <p>Исследования в области цифровой и отраслевой экономики.</p>
+        </div>
+        <div class="info-item">
+            <img src="https://via.placeholder.com/100" alt="Иконка 3">
+            <h3>Квалифицированный персонал</h3>
+            <p>Профессиональные преподаватели и сотрудники кафедры.</p>
+        </div>
+    </div>
+</div>
+</body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши преподаватели</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .teachers-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .teachers-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #000;
+        }
+        .teachers-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .teacher-card {
+            width: 200px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .teacher-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .teacher-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .teacher-card h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #000;
+        }
+        .teacher-card p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<section class="teachers-section">
+    <h2>Наши преподаватели</h2>
+    <div class="teachers-container">
+        <!-- Карточка 1 -->
+        <div class="teacher-card">
+            <img src="teacher1.jpg" alt="Алексей Якушин">
+            <h3>Алексей Якушин</h3>
+            <p>Доцент ВМК МГУ им. Ломоносова</p>
+        </div>
+        <!-- Карточка 2 -->
+        <div class="teacher-card">
+            <img src="teacher2.jpg" alt="Ирина Зернышко">
+            <h3>Ирина Зернышко</h3>
+            <p>Старший медиа менеджер @Unilever</p>
+        </div>
+        <!-- Карточка 3 -->
+        <div class="teacher-card">
+            <img src="teacher3.jpg" alt="Рустем Валиев">
+            <h3>Рустем Валиев</h3>
+            <p>Доцент каф. МФТИ</p>
+        </div>
+        <!-- Карточка 4 -->
+        <div class="teacher-card">
+            <img src="teacher4.jpg" alt="Преподаватель 4">
+            <h3>Имя Фамилия</h3>
+            <p>Описание преподавателя</p>
+        </div>
+        <!-- Карточка 5 -->
+        <div class="teacher-card">
+            <img src="teacher5.jpg" alt="Преподаватель 5">
+            <h3>Имя Фамилия</h3>
+            <p>Описание преподавателя</p>
+        </div>
+        <!-- Карточка 6 -->
+        <div class="teacher-card">
+            <img src="teacher6.jpg" alt="Преподаватель 6">
+            <h3>Имя Фамилия</h3>
+            <p>Описание преподавателя</p>
+        </div>
+        <!-- Карточка 7 -->
+        <div class="teacher-card">
+            <img src="teacher7.jpg" alt="Преподаватель 7">
+            <h3>Имя Фамилия</h3>
+            <p>Описание преподавателя</p>
+        </div>
+        <!-- Карточка 8 -->
+        <div class="teacher-card">
+            <img src="teacher8.jpg" alt="Преподаватель 8">
+            <h3>Имя Фамилия</h3>
+            <p>Описание преподавателя</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Секция для сайта</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .section {
+            background-color: #00224F;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .section h1 {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            color: #00224F;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px #00224F;
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="section">
+    <h1>Хатмкунандаи муваффақи кафедраи мо соҳиби чунин донишҳо мегардад:</h1>
+    <div class="cards">
+        <div class="card">
+            <img src="экономика.svg" alt="Chart Icon">
+            <p>Принсипҳои таҳия, рушд, пешбурди маҳсулоти технологӣ</p>
+        </div>
+        <div class="card">
+            <img src="методология.svg" alt="Database Icon">
+            <p>Методҳои асосӣ дар соҳаи истифодаи пойгоҳи додаҳо</p>
+        </div>
+        <div class="card">
+            <img src="основы цэ.svg" alt="Briefcase Icon">
+            <p>Асосҳои иқтисоди рақамӣ ва тамоюлҳои асосии рушди он</p>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .news-section {
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .news-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-date {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
+        .news-title {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0 5px;
+        }
+
+        .news-description {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+        }
+    </style>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .news-section {
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .news-item {
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Изменение цвета границ и тени при наведении */
+        .news-item:hover {
+            border-color: #007BFF;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+        }
+
+        .news-date {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
+        .news-title {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0 5px;
+        }
+
+        .news-description {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="news-section">
+        <div class="news-item">
+            <p class="news-date">06.12.2024</p>
+            <h3 class="news-title">Команда КНИТУ-КАИ победила в Симоновской олимпиаде</h3>
+            <p class="news-description">
+                В университете подвели итоги Всероссийской олимпиады студентов «Компьютерное моделирование в авиастроении имени М.П. Симонова».
+            </p>
+        </div>
+        <div class="news-item">
+            <p class="news-date">06.12.2024</p>
+            <h3 class="news-title">Доклад аспиранта КНИТУ-КАИ высоко оценен на конференции РКК «Энергия»</h3>
+            <p class="news-description">
+                Андрей Евлампьев представил доклад на тему термической обработки сварных соединений из разнородных металлов.
+            </p>
+        </div>
+        <div class="news-item">
+            <p class="news-date">06.12.2024</p>
+            <h3 class="news-title">Активисты акселератора «Крылья КАИ» познакомились с Иннополисом</h3>
+            <p class="news-description">
+                Акселерационная программа «Крылья КАИ» не только расширяет горизонты, но и вдохновляет на выбор карьеры в высоких технологиях.
+            </p>
+        </div>
+    </div>
+</body>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        footer {
+            background-color: #1E2B3A;
+            color: #FFFFFF;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        footer div {
+            margin-bottom: 20px;
+        }
+        footer h3 {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #cfbe61;
+        }
+        footer p, footer a {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            padding: 0 20px;
+        }
+        .footer-section:last-child {
+            text-align: right;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #b6ab6b;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <section id="контакты" class="section"></section>
+<footer>
+    <div class="footer-section">
+        <h3>ДПДТТ ба номи академик М.С.Осимӣ дар шаҳри Хуҷанд</h3>
+        <p>Сомонаи расмии кафедраи Иқтисодиёти рақамии донишкада</p>
+        <p>© 2024 </p>
+    </div>
+    <div class="footer-section">
+        <h3>Комиссияи қабул</h3>
+        <p><strong>Суроға:</strong>  Ҷумҳурии Тоҷикистон, 735700,ш.Хуҷанд, кӯчаи Исмоили Сомонӣ, 226 </p>
+        <p><strong>Телефон барои алоқа:</strong> +992 (3422) 6-04-54</p>
+        <p><strong>Почтаи электронӣ:</strong><a href="info@polytech.tj"></a></p>
+
+    </div>
+    <div class="footer-section">
+        <h3>Маъмурият</h3>
+        <p><strong>Суроға:</strong> Ҷумҳурии Тоҷикистон, 735700,ш.Хуҷанд, кӯчаи Исмоили Сомонӣ, 226</p>
+        <p><strong>Телефон барои алоқа:</strong> +992 (3422) 6-04-54</p>
+        <p><strong>Почтаи электронӣ:</strong> <a href="info@polytech.tj"></a></p>
+    </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
+
